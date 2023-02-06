@@ -21,6 +21,7 @@ Content-Type: application/json
 
 ### FAVORITES INDEX
 GET http://localhost:3000/favorites.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzU3OTk0ODR9.DD4lSGAioVVBJUmBeR3lNtDMz-UGC8AYXMlF9LFB4aI
 
 ### FAVORITES CREATE
 POST http://localhost:3000/favorites.json

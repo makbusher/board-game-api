@@ -1,6 +1,6 @@
 class FavoritesController < ApplicationController
   def index 
-    favorites = Favorite.all 
+    favorites = Favorite.where(user_id: current_user.id)
     render json: favorites.as_json
   end
   
