@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
+
+  get "/favorites" => "favorites#index"
+  post "/favorites" => "favorites#create"
+  delete "/favorites/:id" => "favorites#destroy"
 end

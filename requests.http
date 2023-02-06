@@ -3,8 +3,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Amy Green",
-  "email": "amy@email.com",
+  "name": "Derek Lewis",
+  "email": "derek@email.com",
   "password": "password",
   "password_confirmation": "password",
   "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
@@ -18,3 +18,18 @@ Content-Type: application/json
   "email": "amy@email.com",
   "password": "password"
 }
+
+### FAVORITES INDEX
+GET http://localhost:3000/favorites.json
+
+### FAVORITES CREATE
+POST http://localhost:3000/favorites.json
+Content-Type: application/json
+
+{
+  "user_id": 2,
+  "game_id": 2
+}
+
+### FAVORITES DESTROY
+DELETE http://localhost:3000/favorites/3.json
