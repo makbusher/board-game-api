@@ -9,3 +9,12 @@ Content-Type: application/json
   "password_confirmation": "password",
   "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
 }
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "amy@email.com",
+  "password": "password"
+}
