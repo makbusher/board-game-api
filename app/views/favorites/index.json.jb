@@ -1,0 +1,10 @@
+@favorites.map do |favorite|
+  {
+    id: favorite.id,
+    name: favorite.game.name,
+    image_url: favorite.game.image_url,
+    description: favorite.game.description,
+    category: favorite.game.category,
+    players: favorite.game.players
+  }
+end
