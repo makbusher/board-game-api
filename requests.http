@@ -22,6 +22,9 @@ Content-Type: application/json
 ### GAMES INDEX
 GET http://localhost:3000/games.json
 
+### GAMES SHOW
+GET http://localhost:3000/games/1.json
+
 ### FAVORITES CREATE (nested)
 POST http://localhost:3000/games/1/favorites.json 
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzU4ODI2NDh9.PPjYx7-RFDsNkLSrVgnwxb9wCYzbv1r2AhFabUbwimQ
