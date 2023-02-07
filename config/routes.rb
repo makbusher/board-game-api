@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   delete "/favorites/:id" => "favorites#destroy"
 
   get "/games" => "games#index"
+
+  resources :games do
+    resources :favorites, only: [:new, :create]
+  end
 end

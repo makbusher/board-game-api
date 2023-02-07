@@ -15,12 +15,16 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "amy@email.com",
+  "email": "sam@email.com",
   "password": "password"
 }
 
 ### GAMES INDEX
 GET http://localhost:3000/games.json
+
+### FAVORITES CREATE (nested)
+POST http://localhost:3000/games/1/favorites.json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzU4ODI2NDh9.PPjYx7-RFDsNkLSrVgnwxb9wCYzbv1r2AhFabUbwimQ
 
 ### FAVORITES INDEX
 GET http://localhost:3000/favorites.json
@@ -31,13 +35,13 @@ GET http://localhost:3000/favorites/1.json
 Authorization: Bearer 
 
 ### FAVORITES CREATE
-POST http://localhost:3000/favorites.json
-Content-Type: application/json
+# POST http://localhost:3000/favorites.json
+# Content-Type: application/json
 
-{
-  "user_id": 2,
-  "game_id": 2
-}
+# {
+#   "user_id": 2,
+#   "game_id": 2
+# }
 
 ### FAVORITES DESTROY
 DELETE http://localhost:3000/favorites/3.json

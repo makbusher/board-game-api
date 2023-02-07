@@ -1,4 +1,7 @@
 class FavoritesController < ApplicationController
+  before_action :authenticate_user
+  before_action :find_game, only: [:create]
+
   def index 
     @favorites = Favorite.where(user_id: current_user.id)
     render template: "favorites/index"
@@ -15,8 +18,8 @@ class FavoritesController < ApplicationController
   
   def create
     favorite = Favorite.create(
-      user_id: params[:user_id],
-      game_id: params[:game_id]
+      user_id: current_user.id,
+      game_id: @game.id
     )
     render json: favorite.as_json
   end
@@ -26,4 +29,9 @@ class FavoritesController < ApplicationController
     favorite.destroy
     render json: { message: "Deleted Successfully" }
   end
+
+  private 
+    def find_game
+      @game = Game.find_by(id: params[:game_id])
+    end
 end
