@@ -19,6 +19,9 @@ Content-Type: application/json
   "password": "password"
 }
 
+### GAMES INDEX
+GET http://localhost:3000/games.json
+
 ### FAVORITES INDEX
 GET http://localhost:3000/favorites.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzU4NzcyMjh9.gmTCcOXDFu5vWS2I582KDi5sFLbzyOhhS7VXrTgBkYc
