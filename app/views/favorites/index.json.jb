@@ -1,6 +1,6 @@
 @favorites.map do |favorite|
   {
-    id: favorite.id,
+    id: favorite.game.id,
     name: favorite.game.name,
     image_url: favorite.game.image_url,
     description: favorite.game.description,

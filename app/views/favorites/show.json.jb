@@ -1,5 +1,9 @@
 {
-  id: @favorite.id,
+  id: @favorite.game.id,
+  name: @favorite.game.name,
+  description: @favorite.game.description,
+  category: @favorite.game.category,
+  players: @favorite.game.players,
   created_at: @favorite.created_at,
   updated_at: @favorite.updated_at
 }
