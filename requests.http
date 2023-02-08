@@ -15,7 +15,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "sam@email.com",
+  "email": "amy@email.com",
   "password": "password"
 }
 
@@ -27,7 +27,7 @@ GET http://localhost:3000/games/1.json
 
 ### FAVORITES CREATE (nested)
 POST http://localhost:3000/games/1/favorites.json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzU5NzExMDl9.OQfOBuabliUrwTwhoTq4Z3b0sAmNkzASvkTJj7J_0N0
 
 ### FAVORITES INDEX
 GET http://localhost:3000/favorites.json

@@ -17,11 +17,17 @@ class FavoritesController < ApplicationController
   end
   
   def create
-    favorite = Favorite.create(
-      user_id: current_user.id,
-      game_id: @game.id
-    )
-    render json: favorite.as_json
+    current_user.favorites.each do |favorite|
+      if @game.id != favorite.game_id
+        favorite = Favorite.create(
+          user_id: current_user.id,
+          game_id: @game.id
+        )
+        render json: favorite.as_json
+      else
+        return {}
+      end
+    end
   end
 
   def destroy
