@@ -8,7 +8,6 @@ Rails.application.routes.draw do
 
   get "/favorites" => "favorites#index"
   get "/favorites/:id" => "favorites#show"
-  post "/favorites" => "favorites#create"
   delete "/favorites/:id" => "favorites#destroy"
 
   get "/games" => "games#index"
@@ -16,5 +15,6 @@ Rails.application.routes.draw do
 
   resources :games do
     resources :favorites, only: [:new, :create]
+    resources :reviews
   end
 end

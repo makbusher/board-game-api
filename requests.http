@@ -27,25 +27,22 @@ GET http://localhost:3000/games/1.json
 
 ### FAVORITES CREATE (nested)
 POST http://localhost:3000/games/1/favorites.json 
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzU5NzExMDl9.OQfOBuabliUrwTwhoTq4Z3b0sAmNkzASvkTJj7J_0N0
+Authorization: Bearer 
 
 ### FAVORITES INDEX
 GET http://localhost:3000/favorites.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzU5Njg1Njl9.6taP5Ef6IQOhfOjqqX1q431FJjLiAm0V2-cYX29ON0s
+Authorization: Bearer 
 
 ### FAVORITES SHOW 
 GET http://localhost:3000/favorites/1.json
 Authorization: Bearer 
 
-### FAVORITES CREATE
-# POST http://localhost:3000/favorites.json
-# Content-Type: application/json
-
-# {
-#   "user_id": 2,
-#   "game_id": 2
-# }
 
 ### FAVORITES DESTROY
 DELETE http://localhost:3000/favorites/4.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzU5Njc0MTV9.q0XE3tpCkzmqikLXbgXuydxi62BaZFlIAWNfWpV9oR8
+Authorization: Bearer 
+
+### REVIEW INDEX
+GET http://localhost:3000/games/1/reviews.json 
+
+
