@@ -1,10 +1,15 @@
 class ReviewsController < ApplicationController
   before_action :authenticate_user, only: [:create]
-  before_action :find_game, only: [:create]
-  
+  before_action :find_game
+
   def index 
-    reviews = Review.all 
-    render json: reviews.as_json
+    @reviews = Review.where(:game_id => @game.id) 
+    render template: "reviews/index"
+  end
+
+  def show
+    review = Review.find_by(id: params[:id])
+    render json: review.as_json
   end
 
   def create

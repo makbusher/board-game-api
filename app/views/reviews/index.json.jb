@@ -1,0 +1,9 @@
+@reviews.map do |review|
+{
+  id: review.id,
+  rating: review.rating,
+  description: review.description,
+  user_id: review.user_id,
+  game_id: review.game_id
+}
+end

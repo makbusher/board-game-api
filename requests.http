@@ -44,6 +44,7 @@ Authorization: Bearer
 
 ### REVIEW INDEX
 GET http://localhost:3000/games/1/reviews.json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzYwNTY3NDV9.t9nCaBpBRewsOm4-mNi_Uk_G8ERvjxZeFL5R_56vk2k
 
 ### REVIEW CREATE
 POST http://localhost:3000/games/1/reviews.json
