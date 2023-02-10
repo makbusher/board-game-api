@@ -17,7 +17,7 @@ class ReviewsController < ApplicationController
       rating: params[:rating],
       description: params[:description],
       game_id: @game.id,
-      user_id: @current_user.id
+      user_id: current_user.id
     )
     @review.save
   end

@@ -25,7 +25,7 @@ class FavoritesController < ApplicationController
         )
         render json: favorite.as_json
       else
-        return {}
+        render json: {message: "Already added to favorites"}
       end
     end
   end
