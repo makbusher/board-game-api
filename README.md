@@ -1,4 +1,4 @@
-#Board Game API
+# Board Game API
 This is a board game api created using Ruby on Rails. It is used with my frontend React application here: https://github.com/makbusher/board-game-frontend
 
 To use this API:
