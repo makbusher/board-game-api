@@ -25,7 +25,7 @@ GET http://localhost:3000/games.json
 ### GAMES SHOW
 GET http://localhost:3000/games/1.json
 
-### FAVORITES CREATE (nested)
+### FAVORITES CREATE 
 POST http://localhost:3000/games/1/favorites.json 
 Authorization: Bearer 
 

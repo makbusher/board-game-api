@@ -9,3 +9,4 @@ class GamesController < ApplicationController
     render json: game.as_json
   end
 end
+
